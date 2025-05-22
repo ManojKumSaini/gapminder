@@ -5,11 +5,12 @@ import plotly.express as px
 
 # App title and description
 st.title("Gapminder Bubble Chart Dashboard")
-st.write("Unlocking Lifetimes: Visualizing Progress in Longevity and Poverty Eradication")
+st.write("BIPM Project - Unlocking Lifetimes: Visualizing Progress in Longevity and Poverty Eradication ")
 
 # Load data
-file_path = Path(r'C:\Users\manoj\OneDrive\Desktop\HWR Berlin Projects\Big data\gapminder\data\final_data\merged_gapminder.csv')
-df = pd.read_csv(file_path)
+#file_path = Path(r'C:\Users\manoj\OneDrive\Desktop\HWR Berlin Projects\Big data\gapminder\data\final_data\merged_gapminder.csv')
+#file_path = Path('C:\Users\manoj\OneDrive\Desktop\HWR Berlin Projects\Big data\gapminder\data/data/final_data/merged_gapminder.csv')
+df = pd.read_csv('data/final_data/merged_gapminder.csv')
 
 # Sidebar filters
 years = sorted(df['year'].unique())
